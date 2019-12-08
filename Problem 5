@@ -1,0 +1,23 @@
+import matplotlib.pyplot as plt
+import math
+pi = math.pi
+import numpy as np
+sin = np.sin
+n = np.arange(0,200)
+x = eval(input("Input function x(n): "))
+f = np.zeros((x.shape))
+
+for n in range(len(v)):
+        if[n]==0:
+            f[n] =-1.5*x[n]+2*x[n+1]-0.5*x[n+2]
+        elif v[n]<=198 and v[n]>0:
+            f[n] = 0.5*x[n+1]-0.5*x[n-1]
+        elif v[n]==199:
+            f[n]= 1.5*x[n]-2*x[n-1]+.5*x[n-2]
+    
+plt.plot(v,x,'-b',label='x(n)')
+plt.xlabel('x')
+plt.plot(v,f,'.g', label='y(n)')
+plt.ylabel('f[n]')
+plt.legend()
+plt.show()
